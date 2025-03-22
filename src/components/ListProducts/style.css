@@ -1,0 +1,9 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.btnAdd{
+    margin-left: 24px;
+    height: 24px;
+}

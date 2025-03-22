@@ -1,0 +1,16 @@
+.btn{
+    background-color: green;
+    color: white;
+    padding: 4px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: rgba(62, 150, 22, 0.2) 0px 8px 24px;
+    display: flex;
+    align-items: center;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
