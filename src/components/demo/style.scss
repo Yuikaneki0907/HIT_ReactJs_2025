@@ -1,0 +1,49 @@
+@use "../../styles/index.scss" as style;
+
+.demo{
+    @include style.flex(center, center);
+    height: 100vh;
+}
+.container {
+  $secondary-color: blue;
+  text-align: center;
+  width: max-content;
+  height: max-content;
+  padding: 48px 64px;
+  border-radius: 20px;
+  background-color: bisque;
+
+
+  &__image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  &__heading1 {
+    color: $secondary-color;
+  }
+
+  &__title {
+    color: style.$primary-color;
+    line-height: 40px;
+  }
+
+  &__button {
+    @include style.flex(center, center);
+  }
+  &__button1 {
+    margin: 4px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    &--follow {
+      background-color: green;
+      color: white;
+    }
+
+    &--message {
+      background-color: $secondary-color;
+      color: white;
+    }
+  }
+}

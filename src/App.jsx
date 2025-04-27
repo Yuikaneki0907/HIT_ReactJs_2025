@@ -7,8 +7,19 @@ import ButtonToggle from "./components/ButtonToggle";
 import ListProducts from "./components/ListProducts";
 import Card from "./components/card";
 import Table from "./components/Table";
+import Demo from "./components/demo";
+import Header3_1 from "./common/Header/header3_1";
+import Banner3_1 from "./components/Banner/banner3_1";
+import Post2 from "./components/Post2";
+import Countdown from "./components/countdown/Countdown";
+import Counter1 from "./components/Counter1/index"
+import Card1 from "./components/Card1";
+import Weather from "./components/Weather/Weather";
+import SignupForm from "./components/form/form";
+import Blogs from "./components/Blogs/Blogs";
 
 const App = () => {
+  const [disPlay, setDisPlay] = useState(false);
   // const arr = [1,2,3,4];
   // const obj = [
   //   {name: "Anh", age: 21},
@@ -17,39 +28,39 @@ const App = () => {
   // ];
   // console.log(<PostItem></PostItem>)
 
-  const [items, setItems] = useState([]);
+  // const [items, setItems] = useState([]);
 
-  const products = [
-    { id: 1, name: "iPhone 15", price: 25000000 },
-    { id: 2, name: "MacBook Air M2", price: 32000000 },
-    { id: 3, name: "iPad Pro", price: 28000000 },
-  ];
+  // const products = [
+  //   { id: 1, name: "iPhone 15", price: 25000000 },
+  //   { id: 2, name: "MacBook Air M2", price: 32000000 },
+  //   { id: 3, name: "iPad Pro", price: 28000000 },
+  // ];
 
-  const handleAdd = (product) => {
-    setItems((prev) => {
-      const existing = prev.find((p) => p.id === product.id);
-      if (existing) {
-        return prev.map((p) => {
-          if (p.id === product.id) return { ...p, quantity: p.quantity + 1 };
-          return p;
-        });
-      }
-      return [...prev, { ...product, quantity: 1 }];
-    });
-  };
+  // const handleAdd = (product) => {
+  //   setItems((prev) => {
+  //     const existing = prev.find((p) => p.id === product.id);
+  //     if (existing) {
+  //       return prev.map((p) => {
+  //         if (p.id === product.id) return { ...p, quantity: p.quantity + 1 };
+  //         return p;
+  //       });
+  //     }
+  //     return [...prev, { ...product, quantity: 1 }];
+  //   });
+  // };
 
-  const handleSub = (product) => {
-    setItems((prev) => {
+  // const handleSub = (product) => {
+  //   setItems((prev) => {
       // const existing = prev.find((p) => p.id === product.id);
       // if (existing) {
-        return prev.map((p) => {
-          if (p.id === product.id) return { ...p, quantity: p.quantity - 1 };
-          return p;
-        }).filter((p) => p.quantity > 0);
+        // return prev.map((p) => {
+        //   if (p.id === product.id) return { ...p, quantity: p.quantity - 1 };
+        //   return p;
+        // }).filter((p) => p.quantity > 0);
       // }
       // return [...prev, { ...product, quantity: 1 }];
-    });
-  };
+  //   });
+  // };
 
   // const handleSub = (product) => {
   //   setItems((prev) => {
@@ -80,7 +91,7 @@ const App = () => {
       {/* <ListProducts sp={products}></ListProducts>
       <ButtonToggle></ButtonToggle> */}
 
-      <h1>Bai 1</h1>
+      {/* <h1>Bai 1 Buoi 2</h1>
       <ListProducts
         items={items}
         products={products}
@@ -91,7 +102,21 @@ const App = () => {
         <h1>Bai 2</h1>
       <Table/>
       <h1>Bai 3</h1>
-      <ButtonToggle></ButtonToggle>
+      <ButtonToggle></ButtonToggle> */}
+      
+
+        {/* <h1>Bai 1 Buoi 3</h1> */}
+        {/* <Header3_1></Header3_1>
+        <Banner3_1></Banner3_1> */}
+
+        {/* <button onClick={() => setDisPlay(!disPlay)}>Toggle</button>
+        {disPlay && <Countdown/>}
+        <Counter1/>
+          <Card1/> */}
+
+        {/* <Weather></Weather> */}
+        {/* <SignupForm></SignupForm> */}
+        <Blogs></Blogs>
     </div>
   );
 };

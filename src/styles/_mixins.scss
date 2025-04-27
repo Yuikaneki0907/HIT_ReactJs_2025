@@ -1,0 +1,6 @@
+//dinh nghia quy tac
+@mixin flex($js, $al){
+    display: flex;
+    justify-content: $js;
+    align-items: $al;
+}

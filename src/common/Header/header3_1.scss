@@ -1,0 +1,83 @@
+@use "../../styles/index.scss" as style;
+
+
+.flex{
+    display: flex;
+}                   
+
+.jc{
+    display: flex;
+    justify-content: space-between;
+    // width: 1320px;
+    // justify-content: center;
+    padding: 0 108px;
+}
+
+.name_brand{
+    line-height: 55px;
+}
+
+.main{
+    font-family: style.$primary-font;
+    color: #494949;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    width: 100%;
+}
+
+.menu{
+    font-weight: 500;
+    &_ul{
+        list-style-type: none;
+
+        &_li{
+            padding: 18px 15px;
+        }
+
+        &_li:hover{
+            color: #10BC69;
+        }
+    }
+
+    &_menu2:hover > .menu2{
+        display: block;
+    }
+
+    &_cb{
+        background-color: #10BC69;
+        width: 80px;
+        height: 40px;
+        border-radius: 50px;
+
+        &_boolean{
+            width: 36px;
+            height: 36px;
+            background-color: #ffffff;
+            border-radius: 50px;
+            margin: 2px;
+        }
+    }
+}
+
+.menu2{
+    position: absolute;
+    list-style-type: none;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 12px 24px;
+    top: 50px;
+
+    &_li{
+        color: #494949;
+        padding: 4px 0;
+        // display: none;
+    }
+
+    &_li:hover{
+        color: #10BC69;
+    }
+}
+
+
