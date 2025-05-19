@@ -25,6 +25,7 @@ const B8Signup = () => {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
+              "x-api-key" : "reqres-free-v1",
             },
             body: JSON.stringify(values),
           });
