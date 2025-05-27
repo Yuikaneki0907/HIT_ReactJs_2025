@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.b9Login{
+    margin: 0 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    &-img{
+        width: 48px;
+        margin-top: 24px;
+    }
+    &_form{
+        padding: 32px;
+        margin: 10% 35%;
+        width: fit-content;
+    }
+    &_title{
+        text-align: center;
+        margin-bottom: 32px;
+        font-size: 60px;
+        font-weight: 600;
+        color: #212353;
+    }
+    &-p{
+        font-size: 16px;
+        font-weight: 400;
+        color: #212353;
+        margin-bottom: 8px;
+    }
+    &_inp{
+        padding: 8px 8px;
+        width: 300px;
+        margin-bottom: 12px;
+        border-radius: 8px;
+        border: 0.5px solid #212353;
+    }
+    &_btn{
+        cursor: pointer;
+        width: 300px;
+        padding: 8px;
+        background-color: #9C69E2;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        margin-top: 12px;
+    }
+}
